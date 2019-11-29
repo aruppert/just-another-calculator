@@ -13,6 +13,8 @@ const Grid = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);
 `;
+// const [number1, setNumber1] = React.useState("");
+// const [number2, setNumber2] = React.useState("");
 
 export default function Calculator() {
   return (
@@ -32,7 +34,7 @@ export default function Calculator() {
       <ActionKey action={"-"} />
       <NumberKey number={0} />
       <ActionKey action={"+"} />
-      <ActionKey action={"="} />
+      <ActionKey action={"next"} />
     </Grid>
   );
 }
